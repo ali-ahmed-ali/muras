@@ -1,4 +1,4 @@
-package com.example.muras
+package com.muras.murasbook
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
