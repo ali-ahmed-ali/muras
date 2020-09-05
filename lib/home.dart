@@ -55,7 +55,10 @@ class NavigationControls extends StatelessWidget {
         final bool webViewReady =
             snapshot.connectionState == ConnectionState.done;
         final WebViewController controller = snapshot.data;
-        return FloatingActionButton(
+        return WillPopScope(
+          child: Container(),
+          onWillPop: () => navigate(context, controller, goBack: true),
+        ) ;/*FloatingActionButton(
           onPressed: !webViewReady
               ? null
               : () => navigate(context, controller, goBack: true),
@@ -63,7 +66,7 @@ class NavigationControls extends StatelessWidget {
           backgroundColor: Colors.green,
           child: Icon(Icons.arrow_back),
           //label: Text(''),
-        );
+        );*/
       },
     );
   }

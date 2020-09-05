@@ -8,8 +8,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Muras',
       debugShowCheckedModeBanner: false,
+      title: 'Muras',
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
